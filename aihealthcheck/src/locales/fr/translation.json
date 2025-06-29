@@ -1,0 +1,17 @@
+{
+  "title": "Trouver un professionnel de santé",
+  "subtitle": "Sélectionnez vos préférences pour trouver le bon prestataire",
+  "use_location": "📍 Utiliser ma position",
+  "doctor": "Médecin",
+  "pharmacy": "Pharmacie",
+  "select_specialty": "Sélectionner une spécialité",
+  "search_specialties": "Rechercher des spécialités...",
+  "pharmacy_type": "Type de pharmacie",
+  "day_pharmacy": "Pharmacie de jour",
+  "night_pharmacy": "Pharmacie de nuit",
+  "max_distance": "Distance maximale (km)",
+  "enter_distance": "Entrez la distance en kilomètres",
+  "find": "Trouver",
+  "doctors": "Médecins",
+  "pharmacies": "Pharmacies"
+}

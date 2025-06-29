@@ -1,0 +1,17 @@
+{
+  "title": "Find Healthcare Provider",
+  "subtitle": "Select your preferences to find the right provider for you",
+  "use_location": "📍 Use My Location",
+  "doctor": "Doctor",
+  "pharmacy": "Pharmacy",
+  "select_specialty": "Select Specialty",
+  "search_specialties": "Search specialties...",
+  "pharmacy_type": "Pharmacy Type",
+  "day_pharmacy": "Day Pharmacy",
+  "night_pharmacy": "Night Pharmacy",
+  "max_distance": "Maximum Distance (km)",
+  "enter_distance": "Enter distance in kilometers",
+  "find": "Find",
+  "doctors": "Doctors",
+  "pharmacies": "Pharmacies"
+}
