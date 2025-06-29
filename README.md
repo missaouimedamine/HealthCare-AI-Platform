@@ -18,8 +18,7 @@ AIHealthCheck is a smart e-health platform developed by IT SERV that leverages a
 | Backend           | Python, FastAPI                       |
 | AI / NLP          | HuggingFace Transformers, FAISS, RAG  |
 | Data Storage      | MongoDB                               |
-| Frontend          | React / Streamlit (or other)          |
-| Deployment        | Docker, GitHub Actions                |
+| Frontend          | React + TailwindCSS                   |
 | Authentication    | OAuth2 / JWT                          |
 
 ## 📁 Project Structure
@@ -31,14 +30,22 @@ AIHealthCheck/
 ├── models/               # LLM and RAG implementation
 ├── data/                 # Medical datasets (e.g., Mayo Clinic)
 ├── dashboard/            # Visualization UI (e.g., Streamlit)
+├── frontend/             # React application
+│   ├── public/
+│   └── src/
+│       ├── components/
+│       ├── pages/
+│       └── services/
 ├── utils/                # Preprocessing and helpers
 ├── .env.example          # Environment variables
-├── requirements.txt      # Python dependencies
+├── requirements.txt      # Python backend dependencies
 └── README.md
 
 ````
 
 ## ⚙️ Installation
+
+### 🔧 Backend Setup
 
 ```bash
 # Clone the repo
@@ -53,34 +60,34 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
 ````
 
+### 💻 Frontend Setup (React)
+
+```bash
+# Move into the frontend directory
+cd aihealthcheck
+
+# Install Node.js dependencies
+npm install
+
+# Start the React app
+npm run dev
+```
+
+> ⚠️ Make sure to update the API base URL in the frontend config (`/src/services/api.js` or `.env`) to point to your backend.
+
 ## 🧪 Running the App
 
 ```bash
-# Start the FastAPI backend
+# Start FastAPI backend
+cd backend
 uvicorn app.main:app --reload
 
-# Or run the Streamlit dashboard (if applicable)
-streamlit run dashboard/app.py
+# In another terminal, start the React frontend
+cd frontend
+npm run dev
+
+
 ```
-
-## 📦 Deployment
-
-* Docker-ready:
-
-```bash
-docker build -t aihealthcheck .
-docker run -p 8000:8000 aihealthcheck
-```
-
-* CI/CD with GitHub Actions (optional setup in `.github/workflows/`)
-
-## 📊 Data Sources
-
-* Medical data sourced from:
-
-  * Mayo Clinic (public symptom-disease mappings)
-  * WHO / OpenAI Health APIs
-  * Curated datasets preprocessed for NLP
 
 ## 🛡️ Security & Privacy
 
@@ -96,9 +103,7 @@ docker run -p 8000:8000 aihealthcheck
 
 ## 🤝 Contributors
 
-* Ghaith Krifa — Data & AI Engineer
-* Tarek Ben Said — Supervisor
-* Farouk Jaziri — Co-supervisor
+* Mohamed Amine Missaoui — Data & AI Engineer
 
 ## 📄 License
 
@@ -110,12 +115,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 
 
----
-
-Let me know if you'd like:
-- A more **academic style** for a thesis submission
-- A **shorter version** for a GitHub profile
-- Or an **Arabic/French** version too
-
-I can also help you generate the actual `LICENSE` file if needed.
-```
