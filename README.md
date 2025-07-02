@@ -1,7 +1,9 @@
 
 # 🏥 AIHealthCheck - Intelligent e-Health Platform
 
-AIHealthCheck is a smart e-health platform developed by IT SERV that leverages artificial intelligence to enhance access to healthcare services. The platform integrates state-of-the-art technologies such as Large Language Models (LLMs), Retrieval-Augmented Generation (RAG), and medical data visualization to deliver personalized and reliable health assistance.
+AIHealthCheck is a smart e-health platform that leverages artificial intelligence to enhance access to healthcare services. The platform integrates state-of-the-art technologies such as Large Language Models (LLMs), Retrieval-Augmented Generation (RAG), and medical data visualization to deliver personalized and reliable health assistance.
+
+![image](https://github.com/user-attachments/assets/fdc09ee0-df12-49d4-b26d-a14de1ac68c1)
 
 ## 🚀 Features
 
